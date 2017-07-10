@@ -57,7 +57,7 @@ var quotes = [
    source: "Nicostratus",
    tags: ["old and new", "time"]
   },
-  {quote: "An invasion of armies can be resisted, bot not an idea whose time has come.",
+  {quote: "An invasion of armies can be resisted, but not an idea whose time has come.",
    source: "Victor Hugo",
    citation: "Histoire d'un crime",
    year: 1852,

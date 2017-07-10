@@ -2,27 +2,32 @@
 // when user clicks anywhere on the button, the "printQuote" function is called
 //document.getElementById('loadQuote').addEventListener("click", printQuote, false);
 
-// generate a random number from 1 to 256
-function randomNumber() {
-  return Math.floor(Math.random() * 256) + 1;
+// generate a random number from lower to upper
+function randomNumber(lower, upper) {
+  return Math.floor(Math.random() * (upper - lower + 1)) + lower;
 }
 
 // generate a randomColor
 function randomColor() {
-  return "rgb(" + randomNumber() + "," + randomNumber() + "," + randomNumber() + ")";
+  return "rgb(" + randomNumber(1, 256) + "," + randomNumber(1, 256) + "," + randomNumber(1, 256) + ")";
+}
+
+// get a random quote
+function getRandomQuote() {
+  return quotes[randomNumber(0, quotes.length - 1)];
 }
 
 // print a random quote to the passage
 function printQuote() {
-  var i = 12;
-  var html = '<p class="quote">' + quotes[i].quote + '</p>';
-  if (quotes[i].source !== undefined) {
-    html += '<p class="source">' + quotes[i].source;
-    if (quotes[i].citation !== undefined) {
-      html += '<span class="citation">' + quotes[i].citation + '</span>';
+  var quote = getRandomQuote();
+  var html = '<p class="quote">' + quote.quote + '</p>';
+  if (quote.source !== undefined) {
+    html += '<p class="source">' + quote.source;
+    if (quote.citation !== undefined) {
+      html += '<span class="citation">' + quote.citation + '</span>';
     }
-    if (quotes[i].year !== undefined) {
-      html += '<span class="year">' + quotes[i].year + '</span>';
+    if (quote.year !== undefined) {
+      html += '<span class="year">' + quote.year + '</span>';
     }
     html += '</p>';
   }
