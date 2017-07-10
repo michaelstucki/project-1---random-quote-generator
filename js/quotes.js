@@ -41,7 +41,6 @@ var quotes = [
   },
   {quote: "Our food should be our medicine. Our medicine should be our food.",
    source: "Hippocrates",
-   citation: "",
    tags: ["health", "food", "medicine"]
   },
   {quote: "The answer, my friend, is blowin' in the wind, the answer is blowin' in the wind.",
@@ -52,12 +51,10 @@ var quotes = [
   },
   {quote: "The prosperity of a fool is a heavy burden to put up with.",
    source: "Aeschylus",
-   citation: "",
    tags: ["prosperity", "fools", "money", "success and failure"]
   },
   {quote: "Old things become new with the passage of time.",
    source: "Nicostratus",
-   citation: "",
    tags: ["old and new", "time"]
   },
   {quote: "An invasion of armies can be resisted, bot not an idea whose time has come.",
@@ -65,5 +62,8 @@ var quotes = [
    citation: "Histoire d'un crime",
    year: 1852,
    tags: ["ideas", "time"]
+  },
+  {quote: "A great city is a great solitude.",
+   tags: ["solitude", "city"]
   }
 ];
