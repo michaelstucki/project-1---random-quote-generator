@@ -60,6 +60,7 @@ var quotes = [
    tags: ["ideas", "time"]
   },
   {quote: "A great city is a great solitude.",
+   source: "Anonymous",
    tags: ["solitude", "city"]
   }
 ];
